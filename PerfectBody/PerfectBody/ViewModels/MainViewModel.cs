@@ -52,13 +52,13 @@ namespace PerfectBody.ViewModels
                     Bmi = Weight / Math.Pow(Height, 2);
 
                     if (Bmi <= 18.5)
-                        Category = "Underweight";
+                        Category = "Underweight Rahul";
                     else if (18.5 <= Bmi && Bmi < 25)
-                        Category = "Normal weight";
+                        Category = "Normal weight Rahul";
                     else if (25 <= Bmi && Bmi < 30)
-                        Category = "Overweight";
+                        Category = "Overweight Rahul";
                     else if (30 <= Bmi)
-                        Category = "Obesity";
+                        Category = "Obesity Rahul";
 
                     Analytics.TrackEvent("Bmi button clicked", new Dictionary<string, string> {
                         { "Weight", Weight.ToString() },
